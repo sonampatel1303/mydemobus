@@ -1,0 +1,127 @@
+/* Background container */
+.background-container {
+  background-image: url('../images/bus1.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Welcome message styling */
+.welcome-message {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* General form container styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f7f7f7, #ffffff);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* Form title */
+.form-title {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Error message styling */
+.error-message {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 5px;
+}
+
+/* Address title */
+.address-title {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  align-self: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 20px;
+    width: 90%;
+  }
+}
